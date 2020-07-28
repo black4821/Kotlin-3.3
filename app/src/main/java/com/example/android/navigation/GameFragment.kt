@@ -102,7 +102,8 @@ class GameFragment : Fragment() {
                         view.findNavController()
                                 .navigate(R.id.action_gameFragment_to_gameWonFragment)
                         view.findNavController()
-                                .navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment())
+                                .navigate(GameFragmentDirections
+                                        .actionGameFragmentToGameWonFragment(numQuestions, questionIndex))
                     }
                 } else {
                     view.findNavController()
