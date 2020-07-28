@@ -101,13 +101,18 @@ class GameFragment : Fragment() {
                     } else {
                         view.findNavController()
                                 .navigate(R.id.action_gameFragment_to_gameWonFragment)
+                        view.findNavController()
+                                .navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment())
                     }
                 } else {
-                    view.findNavController().
-                    navigate(R.id.action_gameFragment_to_gameOverFragment)
+                    view.findNavController()
+                            .navigate(R.id.action_gameFragment_to_gameOverFragment)
+                    view.findNavController()
+                            .navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment())
                 }
             }
         }
+
         return binding.root
     }
 
